@@ -1,0 +1,3 @@
+#!/bin/sh
+site=css.kemitchell.com
+scp ./*.css "$site:/var/www/$site/"
