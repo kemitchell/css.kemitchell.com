@@ -1,0 +1,156 @@
+html {
+  line-height: 1.37;
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+footer {
+  border-top: 1px solid black;
+}
+
+@media screen {
+  body {
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+}
+
+@media print {
+  html {
+    column-gap: 0.25in;
+    columns: 3;
+    font-family: serif;
+    font-size: 9pt;
+  }
+
+  .twocolumns {
+    columns: 2;
+  }
+
+  .noprint {
+    display: none;
+  }
+
+  .smaller {
+    font-size: 8pt;
+  }
+
+  .bigger {
+    font-size: 10pt;
+  }
+
+  .evenBigger {
+    font-size: 11pt;
+  }
+
+  a[href] {
+    color: black;
+    text-decoration: underline dotted;
+  }
+
+  blockquote {
+    margin: 0 0 0 1rem;
+  }
+
+  ol, dl, ul {
+    padding: 0 0 0 1rem;
+  }
+
+  li, dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    page-break-after: avoid;
+  }
+
+  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+    text-indent: 0;
+  }
+
+  h2 {
+    font-style: italic;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  p:before {
+    color: #f4f4f4;
+    content: '¶ ';
+  }
+
+  blockquote {
+    margin-left: 0;
+  }
+
+  blockquote p:before {
+    color: #f4f4f4;
+    content: '❝ ¶ ';
+  }
+
+  li p:first-child:before,
+  header p:before {
+    content: none;
+  }
+
+  aside {
+    border: 1px solid #f4f4f4;
+  }
+}
+
+iframe,
+figure {
+  display: none;
+}
+
+.print {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+hr.stars {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stars:before {
+  content: "* * *";
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.reference {
+  font-size: 50%;
+}
+
+/* Wikipedia */
+
+.mw-editsection {
+  display: none;
+}
