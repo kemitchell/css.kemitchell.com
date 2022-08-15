@@ -51,6 +51,11 @@ footer {
     font-size: 11pt;
   }
 
+  /* Wikipedia References */
+  .mw-headline#References, .reflist {
+    display: none;
+  }
+
   a[href] {
     color: black;
     text-decoration: underline dotted;
