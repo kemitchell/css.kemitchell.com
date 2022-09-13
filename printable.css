@@ -123,6 +123,11 @@ figure {
   display: none;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
 .print {
   display: block;
 }
