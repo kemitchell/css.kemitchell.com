@@ -35,6 +35,10 @@ footer {
     font-size: 9pt;
   }
 
+  .tnr {
+    font-family: "Times New Roman";
+  }
+
   .twocolumns {
     columns: 2;
   }
