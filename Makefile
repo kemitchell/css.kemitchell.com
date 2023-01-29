@@ -1,9 +1,12 @@
-all: styles.css all.css
+READABLE=readable.css
 
-styles.css: normalize.css readable.css print.css
-	echo '@charset "utf-8";\n' > $@
+all: $(READABLE)
+
+$(READABLE): normalize.css readable-base.css readable-print.css code.css
+	printf "@charset 'utf-8';\n\n" > $@
 	cat $^ >> $@
 
-all.css: normalize.css readable.css print.css code.css
-	echo '@charset "utf-8";\n' > $@
-	cat $^ >> $@
+.PHONY: clean
+
+clean:
+	rm -f $(READABLE)
