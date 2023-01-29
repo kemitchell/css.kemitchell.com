@@ -28,18 +28,21 @@ footer {
 }
 
 @media print {
-  html {
+  body {
     column-gap: 0.25in;
     columns: 3;
     font-family: serif;
     font-size: 9pt;
   }
 
-  .tnr {
+  .tnr, .TNR {
     font-family: "Times New Roman";
   }
 
-  .twocolumns {
+  .twocolumns,
+  .twoColumns,
+  .twocolumn,
+  .twoColumn {
     columns: 2;
   }
 
