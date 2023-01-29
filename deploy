@@ -1,5 +1,5 @@
 #!/bin/sh
 printf "@charset 'utf-8';\n\n" > readable.css
-cat normalize.css readable-base.css readable-print.css code.css >> readable.css
+cat normalize.css readable-base.css code.css >> readable.css
 site=css.kemitchell.com
 scp ./*.css ./*.js "$site:/var/www/$site/"
