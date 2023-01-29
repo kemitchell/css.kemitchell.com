@@ -1,3 +1,4 @@
 #!/bin/sh
+make --quiet
 site=css.kemitchell.com
-scp ./*.css "$site:/var/www/$site/"
+scp ./*.css ./*.js "$site:/var/www/$site/"
