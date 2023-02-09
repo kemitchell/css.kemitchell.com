@@ -139,6 +139,10 @@ table {
   border-collapse: collapse;
 }
 
+td, th {
+  padding: 0.25ex;
+}
+
 .print {
   display: block;
 }
