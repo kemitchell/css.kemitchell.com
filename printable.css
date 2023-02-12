@@ -74,7 +74,11 @@ footer {
 
   .printURLs a[href]:after,
   .printurls a[href]:after {
-    content: "(" attr(href) ")";
+    color: black;
+    content: "[" attr(href) "]";
+    overflow-wrap: break-word;
+    text-decoration: none;
+    word-break: break-word;
   }
 
   blockquote {
