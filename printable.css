@@ -72,16 +72,15 @@ footer {
     text-decoration: underline dotted;
   }
 
-  a[href]:after, a[href]:after {
+  a[href]:after {
     color: black;
     content: "[" attr(href) "]";
     overflow-wrap: break-word;
-    text-decoration: none;
+    text-decoration: none !important;
     word-break: break-word;
   }
 
-  .nourls a[href]:after,
-  .noprinturls a[href]:after {
+  .nourls a[href]:after, .noprinturls a[href]:after {
     content: none;
   }
 
