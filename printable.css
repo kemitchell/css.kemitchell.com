@@ -72,13 +72,17 @@ footer {
     text-decoration: underline dotted;
   }
 
-  .printURLs a[href]:after,
-  .printurls a[href]:after {
+  a[href]:after, a[href]:after {
     color: black;
     content: "[" attr(href) "]";
     overflow-wrap: break-word;
     text-decoration: none;
     word-break: break-word;
+  }
+
+  .nourls a[href]:after,
+  .noprinturls a[href]:after {
+    content: none;
   }
 
   blockquote {
