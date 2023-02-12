@@ -72,6 +72,11 @@ footer {
     text-decoration: underline dotted;
   }
 
+  .printURLs a[href]:after,
+  .printurls a[href]:after {
+    content: "(" attr(href) ")";
+  }
+
   blockquote {
     margin: 0 0 0 1rem;
   }
