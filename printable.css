@@ -74,7 +74,7 @@ footer {
 
   a[href]:after {
     color: black;
-    content: "[" attr(href) "]";
+    content: " [" attr(href) "]";
     overflow-wrap: break-word;
     text-decoration: none !important;
     word-break: break-word;
