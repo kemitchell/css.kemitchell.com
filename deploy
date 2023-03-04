@@ -11,4 +11,4 @@ printf "@charset 'utf-8';\n\n" > "$tmp/readable.css"
 cat normalize.css readable-base.css code.css >> "$tmp/readable.css"
 
 site=css.kemitchell.com
-scp "$tmp/" ./*.js "$site:/var/www/$site/"
+rsync -a --delete "$tmp/" "$site:/var/www/$site"
