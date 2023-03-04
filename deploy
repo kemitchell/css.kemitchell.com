@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+
 tmp="$(mktemp -d)"
 remove_tmp () {
   rm -rf "$tmp"
@@ -10,5 +11,6 @@ git ls-files -z "*.js" "*.css" | xargs -0 -I{} cp {} "$tmp"
 printf "@charset 'utf-8';\n\n" > "$tmp/readable.css"
 cat normalize.css readable.css code.css >> "$tmp/readable.css"
 
+tree "$tmp"
 site=css.kemitchell.com
 rsync -a --delete "$tmp/" "$site:/var/www/$site"
