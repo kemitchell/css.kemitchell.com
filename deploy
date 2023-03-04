@@ -1,5 +1,14 @@
 #!/bin/sh
-printf "@charset 'utf-8';\n\n" > readable.css
-cat normalize.css readable-base.css code.css >> readable.css
+set -e
+tmp="$(mktemp -d)"
+remove_tmp () {
+  rm -rf "$tmp"
+}
+trap remove_tmp EXIT
+
+git ls-files -z "*.js" "*.css" | xargs -0 -I{} cp {} "$tmp"
+printf "@charset 'utf-8';\n\n" > "$tmp/readable.css"
+cat normalize.css readable-base.css code.css >> "$tmp/readable.css"
+
 site=css.kemitchell.com
-scp ./*.css ./*.js "$site:/var/www/$site/"
+scp "$tmp/" ./*.js "$site:/var/www/$site/"
