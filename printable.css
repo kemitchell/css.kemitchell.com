@@ -7,10 +7,10 @@ html {
 }
 
 aside {
-  border-radius: 1rem;
   border: 1px solid black;
+  border-radius: 1rem;
   margin: 1rem 0;
-  padding: 0 1rem;
+  padding: 0.5rem;
 }
 
 header {
@@ -132,10 +132,6 @@ footer {
   li p:first-child:before,
   header p:before {
     content: none;
-  }
-
-  aside {
-    border: 1px solid #f4f4f4;
   }
 }
 
