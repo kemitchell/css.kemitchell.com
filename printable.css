@@ -40,6 +40,11 @@ footer {
     font-family: "Times New Roman";
   }
 
+  .onecolumn,
+  .nocolumns {
+    columns: 0;
+  }
+
   .twocolumns,
   .twoColumns,
   .twocolumn,
