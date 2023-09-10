@@ -30,8 +30,8 @@ footer {
 
 @media print {
   body {
+    column-count: 3;
     column-gap: 0.25in;
-    columns: 3;
     font-family: serif;
     font-size: 9pt;
   }
@@ -41,15 +41,17 @@ footer {
   }
 
   .onecolumn,
-  .nocolumns {
-    columns: 0;
+  .oneColumn,
+  .nocolumns,
+  .noColumns {
+    column-count: auto;
   }
 
   .twocolumns,
   .twoColumns,
   .twocolumn,
   .twoColumn {
-    columns: 2;
+    column-count: 2;
   }
 
   .noprint {
