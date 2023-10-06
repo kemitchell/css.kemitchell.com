@@ -42,15 +42,21 @@ footer {
 
   .onecolumn,
   .oneColumn,
+  .onecol,
+  .oneCol,
   .nocolumns,
-  .noColumns {
+  .noColumns,
+  .nocol,
+  .noCol {
     column-count: auto;
   }
 
   .twocolumns,
   .twoColumns,
   .twocolumn,
-  .twoColumn {
+  .twoColumn,
+  .twocol,
+  .twoCol {
     column-count: 2;
   }
 
