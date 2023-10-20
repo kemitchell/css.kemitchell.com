@@ -110,6 +110,14 @@ td, th {
   vertical-align: top;
 }
 
+tr *:first-child {
+  padding-left: 0;
+}
+
+td *:last-child {
+  padding-right: 0;
+}
+
 /* Edits */
 
 ins {
