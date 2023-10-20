@@ -104,13 +104,10 @@ thead tr:last-child {
   border-bottom: 1px solid black;
 }
 
-tbody th, tbody td {
-  padding: 0.8rem 0.5rem;
-  vertical-align: top;
-}
-
 td, th {
+  padding: 0.8rem 0.5rem;
   text-align: left;
+  vertical-align: top;
 }
 
 /* Edits */
