@@ -114,7 +114,7 @@ tr *:first-child {
   padding-left: 0;
 }
 
-td *:last-child {
+tr *:last-child {
   padding-right: 0;
 }
 
