@@ -307,3 +307,5 @@ dt {
   ins { color: lightgreen; }
   del { color: pink; }
 }
+
+summary { font-weight: bold; }
