@@ -7,7 +7,7 @@ remove_tmp () {
 }
 trap remove_tmp EXIT
 
-git ls-files -z "*.js" "*.css" | xargs -0 -I{} cp {} "$tmp"
+git ls-files -z "*.js" "*.css" "*.html" | xargs -0 -I{} cp {} "$tmp"
 printf "@charset 'utf-8';\n\n" > "$tmp/readable.css"
 cat normalize.css readable.css code.css >> "$tmp/readable.css"
 
