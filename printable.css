@@ -87,6 +87,7 @@ footer {
     text-decoration: underline dotted;
   }
 
+  .showlinks a[href]:after,
   .hrefs a[href]:after {
     color: black;
     content: " [" attr(href) "]";
