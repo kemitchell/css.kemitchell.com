@@ -315,3 +315,5 @@ dt {
 }
 
 summary { font-weight: bold; }
+
+.nobreak, .no-break .noBreak { white-space: nowrap; }
