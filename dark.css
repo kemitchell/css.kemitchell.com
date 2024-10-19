@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+  a[href] {
+    color: cornflowerblue;
+    &:visited { color: darkorchid; }
+  }
+}
