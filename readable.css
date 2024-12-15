@@ -308,18 +308,6 @@ dt {
   }
 }
 
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000;
-    color: white;
-  }
-  a[href] { color: lightblue; }
-  ins { color: lightgreen; }
-  del { color: pink; }
-}
-*/
-
 summary { font-weight: bold; }
 
 .nobreak, .no-break .noBreak { white-space: nowrap; }
