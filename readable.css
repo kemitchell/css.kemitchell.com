@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 html {
   font-size: 2.0vw;
   text-align: left;
@@ -304,6 +308,7 @@ dt {
   }
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #000;
@@ -313,6 +318,7 @@ dt {
   ins { color: lightgreen; }
   del { color: pink; }
 }
+*/
 
 summary { font-weight: bold; }
 
